@@ -1,0 +1,46 @@
+@import '--selectors.css';
+
+.users-list {
+  max-width: 900px;
+
+  th.birthday {
+    width: 100px;
+  }
+
+  td.birthday {
+    text-align: right;
+  }
+
+  th.options {
+    width: 60px;
+  }
+
+  td.options {
+    text-align: center;
+
+    .link {
+      opacity: 0;
+
+    }
+
+    .remove {
+      color: #9B3D3D;
+      padding-left: 5px;
+    }
+  }
+
+  tr:hover .link {
+    opacity: 1;
+    transition: opacity 1s;
+  };
+}
+
+.create-user-link {
+  padding-left: 10px;
+  vertical-align: middle;
+  font-size: 0.7em;
+}
+
+:--modal-content.users {
+  width: 400px;
+}
